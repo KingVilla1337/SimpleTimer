@@ -108,36 +108,36 @@ namespace SimpleTimer
             lstLabs.Columns.Add("Gesamtzahl", 160);
             lstLabs.Columns.Add("Rundenzeit", 160);
 
-            StyleButtonFlat(btnStart, Color.FromArgb(56, 132, 255));   // Blau
-            StyleButtonFlat(btnStop, Color.FromArgb(56, 132, 255));      // Grau
-            StyleButtonFlat(btnReset, Color.FromArgb(56, 132, 255));     // Grau
-            StyleButtonFlat(btnLab, Color.FromArgb(56, 132, 255));     // Blau
-            StyleButtonFlat(btnListClear, Color.FromArgb(56, 132, 255)); // Grau
+            StyleButtonFlat(btnStart, Color.FromArgb(56, 132, 255));   
+            StyleButtonFlat(btnStop, Color.FromArgb(56, 132, 255));      
+            StyleButtonFlat(btnReset, Color.FromArgb(56, 132, 255));     
+            StyleButtonFlat(btnLab, Color.FromArgb(56, 132, 255));     
+            StyleButtonFlat(btnListClear, Color.FromArgb(56, 132, 255)); 
 
 
-            // Dezente Farbwahl (modern & ruhig)
+          
             ApplyButtonColors();
 
 
         }
         private void StyleButtonFlat(Button b, Color back)
         {
-            b.UseVisualStyleBackColor = false;     // wichtig: sonst ignoriert er BackColor
+            b.UseVisualStyleBackColor = false;     
             b.FlatStyle = FlatStyle.Flat;
-            b.FlatAppearance.BorderSize = 0;       // kein weiﬂer Rand
+            b.FlatAppearance.BorderSize = 0;      
             b.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 60, 60);
             b.FlatAppearance.MouseDownBackColor = Color.FromArgb(50, 50, 50);
 
-            b.BackColor = back;                    // deine Farbe
+            b.BackColor = back;                    
             b.ForeColor = Color.White;
             b.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
             b.TextAlign = ContentAlignment.MiddleCenter;
         }
         private void ApplyButtonColors()
         {
-            // dezentes, einheitliches Schema
-            var accent = Color.FromArgb(56, 132, 255); // Blau
-            var neutral = Color.FromArgb(72, 72, 72);  // Dunkelgrau
+           
+            var accent = Color.FromArgb(56, 132, 255); 
+            var neutral = Color.FromArgb(72, 72, 72);  
 
             StyleButtonFlat(btnStart, accent);
             StyleButtonFlat(btnLab, accent);
